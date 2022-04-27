@@ -248,6 +248,7 @@ body {
     .hero-section_main_details {
         align-items: start;
         text-align: start;
+        width: 50%;
     }
     .hero-section_main_details_header {
         font-size: 4rem;
