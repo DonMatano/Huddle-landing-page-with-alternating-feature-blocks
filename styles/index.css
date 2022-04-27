@@ -1,0 +1,206 @@
+:root {
+    --primary-pink: hsl(322, 100%, 66%);
+    --neutral-very-pale-cyan: hsl(193, 100%, 96%);
+    --neutral-very-dark-cyan: hsl(193, 100%, 9%);
+    --neutral-grayish-blue: hsl(208, 11%, 55%);
+    --font-open-sans: 'Open Sans', sans-serif;
+    --font-poppins: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-poppins);
+    font-weight: 600;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.8rem;
+    color: var(--neutral-very-dark-cyan);
+}
+
+.hide-desktop {
+    display: block;
+}
+
+.show-desktop {
+    display: none;
+}
+
+.hero-section {
+    padding: 2rem;
+    background-color: var(--neutral-very-pale-cyan);
+    background-image: url('/images/bg-hero-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+}
+
+.hero-section_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero-section_nav_logo {
+    width: 10.4rem;
+    height: 1.6rem;
+}
+.hero-section_nav_link {
+    background-color: white;
+    font-size: 1rem;
+    padding: 0.5em 2.5em;
+    font-weight: bold;
+    border-radius: 1.2rem;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.0954201);
+}
+.hero-section_main {
+    padding: 1.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+.hero-section_main_details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+}
+.hero-section_main_details_header {
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+}
+.hero-section_main_details_paragraph {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+}
+.hero-section_main_details_link, .get-started-section_link {
+    display: block;
+    background-color: var(--primary-pink);
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 1.63rem;
+    width: 80%;
+    color: white;
+    padding: 1em 3em;
+    border-radius: 2rem;
+    box-shadow: 2px 3px 6px 1px rgba(255, 82, 193, 0.166185);
+}
+
+
+.features-section {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    padding: 1rem 2rem;
+}
+.features-section_list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 4rem;
+}
+.feature-section_list_item {
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.07);
+    border-radius: 1.6rem;
+    padding: 8rem 3.5rem 3rem 3.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.feature-section_list_item_header {
+    font-size: 2rem;
+    margin-top: 6rem;
+}
+.feature-section_list_item_paragraph {
+    margin-top: 2rem;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    color: var(--neutral-grayish-blue);
+}
+
+
+.get-started-section {
+    border-radius: 1.5rem;
+    box-shadow: 0 0 1.4rem rgba(0, 0, 0, 0.0710768);
+    margin: 3rem 1rem;
+    color: var(--neutral-very-dark-cyan);
+    text-align: center;
+    padding: 5rem 1.5rem 2.5rem 1.5rem;
+    position: absolute;
+    top: -18%;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    background-color: white;
+}
+.get-started-section_header {
+    font-size: 1.8rem;
+    line-height: 3rem;
+}
+.get-started-section_link {
+    margin: 2rem auto 1rem auto;
+    width: 75%
+}
+
+
+.footer {
+    padding: 14rem 1.5rem 1rem 1.5rem;
+    background-color: var(--neutral-very-dark-cyan);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 20rem;
+}
+.footer_logo {
+    width: 15.2rem;
+    height: 2.4rem;
+}
+
+.footer_contact-list {
+    margin: 3rem 0;
+    display: flex;
+    flex-direction: column;
+}
+.footer_contact-list_item {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+.footer_contact-list_item .location {
+    align-self: start;
+}
+
+.footer_contact-list_item-paragraph {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+}
+.footer_nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-size: 1.4rem;
+    margin-top: 2rem;
+    line-height: 2.7rem;
+}
+.footer_copyright {
+    font-size: 1.1rem;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+
+@media only screen and (min-width: 769px) {
+    .hide-desktop {
+        display: none;
+    }
+    .show-desktop {
+        display: block;
+    }
+}
